@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - wip-pool
 jobs:
   run:
     name: Build
@@ -13,6 +12,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
+          - windows-latest
         ocaml-compiler:
           - 4.03.x
           - 4.10.x
